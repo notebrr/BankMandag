@@ -22,4 +22,9 @@ class KontoTest {
     void indsætNegativ() {
         assertEquals(100, konto.indsæt(-100));
     }
+
+    @Test
+    void hævPenge() {
+        assertEquals(100, konto.hæv(-100));
+    }
 }
