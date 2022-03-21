@@ -1,5 +1,8 @@
 package DomæneObjekter;
 
+import java.io.IOException;
+import java.util.concurrent.Executors;
+
 public class Konto {
     private String navn;
     private String kode;
@@ -31,6 +34,10 @@ public class Konto {
     }
 
     public int hæv(int i){
+        if(saldo - i < 0){
+            return saldo;
+        }
+
         if(i > 0){
             saldo = saldo - i;
         }

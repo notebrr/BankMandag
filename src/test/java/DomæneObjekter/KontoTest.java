@@ -25,6 +25,6 @@ class KontoTest {
 
     @Test
     void hævPenge() {
-        assertEquals(100, konto.hæv(-100));
+        assertEquals(100, konto.hæv(-200));
     }
 }
